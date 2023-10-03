@@ -69,7 +69,7 @@ void CspyChatDlg::DoDataExchange(CDataExchange* pDX)
 }
 
 BEGIN_MESSAGE_MAP(CspyChatDlg, CDialogEx)
-	ON_WM_SYSCOMMAND()
+//	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON1, &CspyChatDlg::OnBnClickedButton1)
@@ -91,6 +91,7 @@ BOOL CspyChatDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
+	//// Test Code
 	// 시스템 메뉴에 "정보..." 메뉴 항목을 추가합니다.
 
 	// IDM_ABOUTBOX는 시스템 명령 범위에 있어야 합니다.
@@ -274,9 +275,13 @@ BOOL CspyChatDlg::OnEraseBkgnd(CDC* pDC)
 
 void CspyChatDlg::ChangeParentWnodowColor(int r, int g, int b)
 {
+	// 위의 함수명이 이상하다 
 	CDC* pDC = GetDC();
 	
 	SetBackgroundColor(RGB(r, g, b));
 	return;
 	
 }
+//
+//
+//   기록관리
