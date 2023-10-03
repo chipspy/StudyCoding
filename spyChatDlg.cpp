@@ -285,4 +285,4 @@ void CspyChatDlg::ChangeParentWnodowColor(int r, int g, int b)
 }
 //
 //
-//   기록관리
+//   기록관리 - 10/04
